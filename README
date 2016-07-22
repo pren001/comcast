@@ -1,49 +1,31 @@
-This is your new Play application
+Overview
+===========
+This is a project for Simple Ad Server based on play framwork. Main Functional Requirements are implemented. 
+
+Instructions for running and deploying
 =================================
 
-This file will be packaged with your application when using `activator dist`.
+- Make sure the version of your java is 1.8
 
-There are several demonstration files available in this template.
+- Install home-brew from http://brew.sh
 
-Controllers
-===========
+- Install sbt from command line “brew install sbt”
 
-- HomeController.java:
+- Download activator version 2.4.2 from https://www.playframework.com/download
 
-  Shows how to handle simple HTTP requests.
+- Install activator. Follow https://www.playframework.com/documentation/2.4.x/Installing
 
-- AsyncController.java:
+- Create new project from command line “vim .bash_profile”, “source .bash_profile”, “activator new”
 
-  Shows how to do asynchronous programming when handling a request.
+- Choose 5) play-java when you see “Choose from these featured templates or enter a template name:
+  1) minimal-akka-java-seed
+  2) minimal-akka-scala-seed
+  3) minimal-java
+  4) minimal-scala
+  5) play-java
+  6) play-scala
+  Then name your project
 
-- CountController.java:
+- Type command line “activator clean run” to run the project, then go to localhost:9000, you will see the welcome page   
 
-  Shows how to inject a component into a controller and use the component when
-  handling requests.
 
-Components
-==========
-
-- Module.java:
-
-  Shows how to use Guice to bind all the components needed by your application.
-
-- Counter.java:
-
-  An example of a component that contains state, in this case a simple counter.
-
-- ApplicationTimer.java:
-
-  An example of a component that starts when the application starts and stops
-  when the application stops.
-
-Filters
-=======
-
-- Filters.java:
-
-  Creates the list of HTTP filters used by your application.
-
-- ExampleFilter.java
-
-  A simple filter that adds a header to every response.
